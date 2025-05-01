@@ -22,6 +22,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20rem;
     background-color: rgba(255, 0, 0, 0.2);
 }
 
@@ -324,7 +325,29 @@ footer{}
                 overflow: hidden;
                 box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.1);
             }
-            .smart{}
+            .smart{
+                a{
+                    font-size: 1.8rem;
+                    color: var(--ibk-main-bg-color);
+                    font-weight: 800;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-bottom: 0.7rem;
+                    i{
+                        display: block;
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url(../images/icon_line_b.svg);
+                        background-position: 70% -18rem;
+                        background-size: 1100%;
+                    }
+                }
+                small{
+                    font-size: 1.2rem;
+                    color: var(--ibk-secondary-color);
+                }
+            }
         }
     }
 }
@@ -333,6 +356,19 @@ footer{}
     html{
         font-size: 9px;
     }
+    .content-center{
+
+    }
+}
+@media screen and (max-width: 980px){
+    .footer-bottom{
+        >div>div{
+            display: block;
+            .smart-wrap{
+                margin-top:20px;
+            }
+        }
+    } ;
 }
 @media screen and (max-width: 767px){
     /* 본문제목 24px
